@@ -3,17 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="Xamarin_Prism.Views.RegistrationPage">
-             Title="RegistrationPage"
+             x:Class="Xamarin_Prism.Views.UserPage">
+             Title="UserPage"
     <StackLayout HorizontalOptions="CenterAndExpand">
-        <Label Text="登録するよ" />
         <Button Text="MainPageへ"
                 Command="{Binding MoveToMainPageCommand}"/>
         <Button Text="UserPageへ"
                 Command="{Binding MoveToUserPageCommand}"/>
-        <Button Text="Twitterログイン"
-                Command="{Binding TwitterLoginCommand}"/>
         <Button Text="アラート表示"
-                Command="{Binding ShowAlertCommand}"/>
+                Command="{Binding ShowAlertCommand}"/>        
     </StackLayout>
 </ContentPage>
